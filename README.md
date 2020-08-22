@@ -52,7 +52,7 @@ Then simply `import CypherPoetReduxUtils` wherever you’d like to use it.
 
 The goal of these utilities is to serve as _primitives_ for architecting SwiftUI apps in the [Redux](https://redux.js.org/)/[Elm](https://guide.elm-lang.org/architecture/) style of Reducers, Actions, Side Effects and Middlewares.
 
-Check out the main [Example App](./Examples/) to see how it [composes different types of app `State` into an app `Store`](), [injects that store]() into views as an `@EnvironmentObject`, and then [sends actions to the store]() as a response to events in the UI.
+Check out the main [Example App](./Examples/ExampleApp) to see how it [composes different types of app `State` into an app `Store`](https://github.com/CypherPoet/CypherPoetReduxUtils/blob/57cbb225c896181083972a298d8952e8feb14826/Examples/ExampleApp/Shared/Data/State/AppState.swift#L16), [injects](https://github.com/CypherPoet/CypherPoetReduxUtils/blob/57cbb225c896181083972a298d8952e8feb14826/Examples/ExampleApp/Shared/ExamplesApp.swift#L25) that store [into views](https://github.com/CypherPoet/CypherPoetReduxUtils/blob/57cbb225c896181083972a298d8952e8feb14826/Examples/ExampleApp/Shared/Scene%20Views/AsyncSideEffectExample.swift#L13) as an `@EnvironmentObject`, and then [sends actions to the store](https://github.com/CypherPoet/CypherPoetReduxUtils/blob/57cbb225c896181083972a298d8952e8feb14826/Examples/ExampleApp/Shared/Scene%20Views/AsyncSideEffectExample.swift#L85) as a response to events in the UI.
 
 
 ## Contributing
