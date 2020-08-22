@@ -1,0 +1,82 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/briansipple/Projects/swift/Packages/CypherPoetReduxUtils/Sources/Reducer.swift",
+      "line": 16,
+      "symbol": "Reducer.reduce",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/briansipple/Projects/swift/Packages/CypherPoetReduxUtils/Sources/Reducer.swift",
+      "line": 18,
+      "symbol": "Reducer.init(reduce:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/briansipple/Projects/swift/Packages/CypherPoetReduxUtils/Sources/Store.swift",
+      "line": 13,
+      "symbol": "Store",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/briansipple/Projects/swift/Packages/CypherPoetReduxUtils/Sources/Store.swift",
+      "line": 16,
+      "symbol": "Store.state",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/briansipple/Projects/swift/Packages/CypherPoetReduxUtils/Sources/Store.swift",
+      "line": 18,
+      "symbol": "Store.tasks",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/briansipple/Projects/swift/Packages/CypherPoetReduxUtils/Sources/Store.swift",
+      "line": 19,
+      "symbol": "Store.serialQueue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/briansipple/Projects/swift/Packages/CypherPoetReduxUtils/Sources/Store.swift",
+      "line": 25,
+      "symbol": "Store.middlewareRunners",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/briansipple/Projects/swift/Packages/CypherPoetReduxUtils/Sources/Store.swift",
+      "line": 29,
+      "symbol": "Store.init(initialState:reducer:middlewareRunners:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/briansipple/Projects/swift/Packages/CypherPoetReduxUtils/Sources/Store.swift",
+      "line": 42,
+      "symbol": "Store",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/briansipple/Projects/swift/Packages/CypherPoetReduxUtils/Sources/Store.swift",
+      "line": 73,
+      "symbol": "Store",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/briansipple/Projects/swift/Packages/CypherPoetReduxUtils/Sources/Store.swift",
+      "line": 75,
+      "symbol": "Store.binding(for:onChange:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/briansipple/Projects/swift/Packages/CypherPoetReduxUtils"
+}

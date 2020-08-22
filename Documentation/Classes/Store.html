@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Store Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Store" class="dashAnchor"></a>
+    <a title="Store Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (26% documented)</p>
+        <p class="header-right"><a href="https://github.com/CypherPoet/CypherPoetReduxUtils"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Store Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Store.html">Store</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Reducer.html">Reducer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:20CypherPoetReduxUtils10Middlewarea">Middleware</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Store</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Store</span><span class="o">&lt;</span><span class="kt">AppState</span><span class="p">,</span> <span class="kt">AppAction</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">ObservableObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CypherPoetReduxUtils5StoreC5statexvp"></a>
+                    <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CypherPoetReduxUtils5StoreC5statexvp">state</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">AppState</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CypherPoetReduxUtils5StoreC5tasksSay7Combine14AnyCancellableCGvp"></a>
+                    <a name="//apple_ref/swift/Property/tasks" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CypherPoetReduxUtils5StoreC5tasksSay7Combine14AnyCancellableCGvp">tasks</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">tasks</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyCancellable</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CypherPoetReduxUtils5StoreC11serialQueueSo17OS_dispatch_queueCvp"></a>
+                    <a name="//apple_ref/swift/Property/serialQueue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CypherPoetReduxUtils5StoreC11serialQueueSo17OS_dispatch_queueCvp">serialQueue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serialQueue</span><span class="p">:</span> <span class="kt">DispatchQueue</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CypherPoetReduxUtils5StoreC17middlewareRunnersSay7Combine12AnyPublisherVyq_s5NeverOGSgx_q_tcGvp"></a>
+                    <a name="//apple_ref/swift/Property/middlewareRunners" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CypherPoetReduxUtils5StoreC17middlewareRunnersSay7Combine12AnyPublisherVyq_s5NeverOGSgx_q_tcGvp">middlewareRunners</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">middlewareRunners</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:20CypherPoetReduxUtils10Middlewarea">Middleware</a></span><span class="o">&lt;</span><span class="kt">AppState</span><span class="p">,</span> <span class="kt">AppAction</span><span class="o">&gt;</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Init"></a>
+                <a name="//apple_ref/swift/Section/Init" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Init"></a>
+                  <h3 class="section-name"><p>Init</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CypherPoetReduxUtils5StoreC12initialState7reducer17middlewareRunnersACyxq_Gx_AA7ReducerVyxq_GSay7Combine12AnyPublisherVyq_s5NeverOGSgx_q_tcGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(initialState:reducer:middlewareRunners:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CypherPoetReduxUtils5StoreC12initialState7reducer17middlewareRunnersACyxq_Gx_AA7ReducerVyxq_GSay7Combine12AnyPublisherVyq_s5NeverOGSgx_q_tcGtcfc">init(initialState:<wbr>reducer:<wbr>middlewareRunners:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">initialState</span><span class="p">:</span> <span class="kt">AppState</span><span class="p">,</span>
+    <span class="nv">reducer</span><span class="p">:</span> <span class="kt"><a href="../Structs/Reducer.html">Reducer</a></span><span class="o">&lt;</span><span class="kt">AppState</span><span class="p">,</span> <span class="kt">AppAction</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="nv">middlewareRunners</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:20CypherPoetReduxUtils10Middlewarea">Middleware</a></span><span class="o">&lt;</span><span class="kt">AppState</span><span class="p">,</span> <span class="kt">AppAction</span><span class="o">&gt;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Send%20Actions%20and%20Side%20Effects"></a>
+                <a name="//apple_ref/swift/Section/Send Actions and Side Effects" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Send%20Actions%20and%20Side%20Effects"></a>
+                  <h3 class="section-name"><p>Send Actions and Side Effects</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CypherPoetReduxUtils5StoreC8dispatchyyq_F"></a>
+                    <a name="//apple_ref/swift/Method/dispatch(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CypherPoetReduxUtils5StoreC8dispatchyyq_F">dispatch(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Central hub for receiving an action and sending it to the <code>Store</code>&lsquo;s app reducer
+for processing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">dispatch</span><span class="p">(</span><span class="n">_</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">AppAction</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CypherPoetReduxUtils5StoreC4send10sideEffectyq__tF"></a>
+                    <a name="//apple_ref/swift/Method/send(sideEffect:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CypherPoetReduxUtils5StoreC4send10sideEffectyq__tF">send(sideEffect:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Asynchronously sends an actions through the <code>Store</code>&lsquo;s app reducer
+after mapping out of our app&rsquo;s middleware.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="n">sideEffect</span> <span class="nv">sideEffectAction</span><span class="p">:</span> <span class="kt">AppAction</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Binding"></a>
+                <a name="//apple_ref/swift/Section/Binding" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Binding"></a>
+                  <h3 class="section-name"><p>Binding</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CypherPoetReduxUtils5StoreC7binding3for8onChange7SwiftUI7BindingVyqd__Gs7KeyPathCyxqd__G_q_qd__ctlF"></a>
+                    <a name="//apple_ref/swift/Method/binding(for:onChange:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CypherPoetReduxUtils5StoreC7binding3for8onChange7SwiftUI7BindingVyqd__Gs7KeyPathCyxqd__G_q_qd__ctlF">binding(for:<wbr>onChange:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">binding</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span><span class="p">(</span>
+    <span class="k">for</span> <span class="nv">keyPath</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">AppState</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">onChange</span> <span class="nv">action</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AppAction</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Binding</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright 2020 CypherPoet</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
