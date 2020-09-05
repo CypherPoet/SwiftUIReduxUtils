@@ -48,9 +48,13 @@ extension Store {
     }
 
 
-    /// Asynchronously sends an actions through the `Store`'s app reducer
-    /// after mapping out of our app's middleware.
-    public func send(sideEffect sideEffectAction: AppAction) {
+    /// Processes a side-effecting `AppAction`.
+    ///
+    /// After immediately dispatching the action to the `Store`'s app reducer,
+    /// this function will iterate through all middlewares, running the side-effect
+    /// action through each and then asynchronously dispatching any `AppAction`
+    /// that results from doing so.
+    public func send(_ sideEffectAction: AppAction) {
         dispatch(sideEffectAction)
 
         // Dispatch all middleware functions and dispatch any mapped actions
