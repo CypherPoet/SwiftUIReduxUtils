@@ -82,7 +82,7 @@ private extension AsyncSideEffectExample {
 private extension AsyncSideEffectExample {
 
     func fetchNewGalaxies() {
-        store.send(sideEffect: .galaxies(.findNewGalaxies))
+        store.send(.galaxies(.findNewGalaxies))
     }
 
     func makeGalaxyFetchingAlert(_ error: GalaxiesState.MiddlewareError) -> Alert {
