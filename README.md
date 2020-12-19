@@ -40,7 +40,7 @@ You can add `CypherPoetReduxUtils` as a dependency in your `Package.swift` file:
 let package = Package(
     //...
     dependencies: [
-        .package(url: "https://github.com/CypherPoet/CypherPoetReduxUtils", from: "0.2.0"),
+        .package(url: "https://github.com/CypherPoet/CypherPoetReduxUtils", from: "0.2.1"),
     ],
     //...
 )
