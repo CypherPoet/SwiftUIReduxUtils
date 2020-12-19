@@ -80,7 +80,7 @@ extension Store {
     /// action when its underlying value is changed.
     public func binding<Value>(
         for keyPath: KeyPath<AppState, Value>,
-        onChange action: @escaping (Value) -> AppAction
+        reactingWith action: @escaping (Value) -> AppAction
     ) -> Binding<Value> {
         Binding<Value>(
             get: { self.state[keyPath: keyPath] },
