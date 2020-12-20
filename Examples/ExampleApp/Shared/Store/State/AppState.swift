@@ -9,8 +9,6 @@
 import Foundation
 import CypherPoetReduxUtils
 
-typealias Reducer = CypherPoetReduxUtils.Reducer
-
 
 struct AppState {
     var galaxiesState = GalaxiesState()

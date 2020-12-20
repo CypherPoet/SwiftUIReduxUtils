@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3454237258EEDC6001A203A /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3454236258EEDC6001A203A /* Reducer.swift */; };
+		F3454238258EEDC6001A203A /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3454236258EEDC6001A203A /* Reducer.swift */; };
 		F3E41C2224F0A7BD00C30752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E41C0D24F0A7BC00C30752 /* Assets.xcassets */; };
 		F3E41C2324F0A7BD00C30752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E41C0D24F0A7BC00C30752 /* Assets.xcassets */; };
 		F3E41CCC24F0A9C900C30752 /* Galaxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41CB224F0A9C800C30752 /* Galaxy.swift */; };
@@ -42,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3454236258EEDC6001A203A /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		F3E41C0D24F0A7BC00C30752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3E41C1224F0A7BC00C30752 /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E41C1524F0A7BC00C30752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E41CC524F0A9C900C30752 /* AppStore.swift */,
+				F3454236258EEDC6001A203A /* Reducer.swift */,
 				F3454227258EE806001A203A /* Middleware */,
 				F3E41CB324F0A9C800C30752 /* State */,
 			);
@@ -369,6 +373,7 @@
 				F3E41CCE24F0A9C900C30752 /* AppState.swift in Sources */,
 				F3E41CE424F0A9C900C30752 /* AsyncSideEffectExample.swift in Sources */,
 				F3E41CEC24F0A9C900C30752 /* GalaxyServiceError.swift in Sources */,
+				F3454237258EEDC6001A203A /* Reducer.swift in Sources */,
 				F3E41CEA24F0A9C900C30752 /* PreviewData.swift in Sources */,
 				F3E41CE824F0A9C900C30752 /* ExamplesApp.swift in Sources */,
 				F3E41CD624F0A9C900C30752 /* LoggingMiddleware.swift in Sources */,
@@ -390,6 +395,7 @@
 				F3E41CCF24F0A9C900C30752 /* AppState.swift in Sources */,
 				F3E41CE524F0A9C900C30752 /* AsyncSideEffectExample.swift in Sources */,
 				F3E41CED24F0A9C900C30752 /* GalaxyServiceError.swift in Sources */,
+				F3454238258EEDC6001A203A /* Reducer.swift in Sources */,
 				F3E41CEB24F0A9C900C30752 /* PreviewData.swift in Sources */,
 				F3E41CE924F0A9C900C30752 /* ExamplesApp.swift in Sources */,
 				F3E41CD724F0A9C900C30752 /* LoggingMiddleware.swift in Sources */,
