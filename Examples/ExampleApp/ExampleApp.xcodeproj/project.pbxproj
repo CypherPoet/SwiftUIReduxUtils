@@ -85,6 +85,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3454226258EE7F3001A203A /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				F3E41CC524F0A9C900C30752 /* AppStore.swift */,
+				F3454227258EE806001A203A /* Middleware */,
+				F3E41CB324F0A9C800C30752 /* State */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		F3454227258EE806001A203A /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				F3454228258EE831001A203A /* App */,
+				F3454229258EE835001A203A /* Galaxies */,
+			);
+			path = Middleware;
+			sourceTree = "<group>";
+		};
+		F3454228258EE831001A203A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F3E41CB924F0A9C800C30752 /* LoggingMiddleware.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F3454229258EE835001A203A /* Galaxies */ = {
+			isa = PBXGroup;
+			children = (
+				F3E41CB724F0A9C800C30752 /* GalaxiesState+Middleware.swift */,
+				F3E41CB824F0A9C800C30752 /* GalaxiesState+MiddlewareError.swift */,
+			);
+			path = Galaxies;
+			sourceTree = "<group>";
+		};
 		F3E41C0524F0A7BB00C30752 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +143,7 @@
 				F3E41C2D24F0A84D00C30752 /* Resources */,
 				F3E41CBA24F0A9C900C30752 /* Scene Views */,
 				F3E41CC924F0A9C900C30752 /* Services */,
+				F3454226258EE7F3001A203A /* Store */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -149,7 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				F3E41CB124F0A9C800C30752 /* Models */,
-				F3E41CB324F0A9C800C30752 /* State */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -166,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				F3E41CB424F0A9C800C30752 /* AppState.swift */,
-				F3E41CB924F0A9C800C30752 /* LoggingMiddleware.swift */,
 				F3E41CB524F0A9C800C30752 /* Galaxies */,
 			);
 			path = State;
@@ -176,8 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				F3E41CB624F0A9C800C30752 /* GalaxiesState.swift */,
-				F3E41CB724F0A9C800C30752 /* GalaxiesState+Middleware.swift */,
-				F3E41CB824F0A9C800C30752 /* GalaxiesState+MiddlewareError.swift */,
 			);
 			path = Galaxies;
 			sourceTree = "<group>";
@@ -195,7 +228,6 @@
 		F3E41CC424F0A9C900C30752 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				F3E41CC524F0A9C900C30752 /* AppStore.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -211,8 +243,8 @@
 		F3E41CC924F0A9C900C30752 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				F3E41CCA24F0A9C900C30752 /* GalaxyServiceError.swift */,
 				F3E41CCB24F0A9C900C30752 /* GalaxyService.swift */,
+				F3E41CCA24F0A9C900C30752 /* GalaxyServiceError.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";

@@ -14,17 +14,20 @@ import Foundation
 
 
 extension GalaxiesState {
-    enum MiddlewareError: String {
+    enum MiddlewareError: Error {
         case unknown
         case networkError
     }
 }
 
+
 extension GalaxiesState.MiddlewareError: Identifiable {
-    var id: String { self.rawValue }
+    var id: UUID { .init() }
 }
 
+
 extension GalaxiesState.MiddlewareError: LocalizedError {
+
     var errorDescription: String? {
         switch self {
         case .unknown:

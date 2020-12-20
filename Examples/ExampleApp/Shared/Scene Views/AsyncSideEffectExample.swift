@@ -62,10 +62,11 @@ extension AsyncSideEffectExample {
 }
 
 
-// MARK: - View Variables
+// MARK: - View Builders
 private extension AsyncSideEffectExample {
 
-    @ViewBuilder var galaxiesListView: some View {
+    @ViewBuilder
+    var galaxiesListView: some View {
         if (galaxiesState.knownGalaxies.isEmpty) {
             Text("No galaxies found.")
         } else {

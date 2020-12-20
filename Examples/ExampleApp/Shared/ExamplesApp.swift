@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct ExamplesApp: App {
 
-    let store = AppStore(
+    @StateObject var store = AppStore(
         initialState: .init(),
         reducer: AppState.defaultReducer,
         middlewareRunners: [
@@ -18,6 +18,7 @@ struct ExamplesApp: App {
             AppState.makeLoggingMiddleware(),
         ]
     )
+
     
     var body: some Scene {
         WindowGroup {
