@@ -63,6 +63,7 @@ extension Store {
             guard let appAction = runner(state, sideEffectAction) else { break }
 
             appAction
+                .subscribe(on: serialQueue)
                 .receive(on: DispatchQueue.main)
                 .sink(receiveValue: { [weak self] appAction in
                     self?.dispatch(appAction)
