@@ -1,4 +1,4 @@
-# SwiftUI ReduxUtils
+# SwiftUI Redux Utils
 
 <p>
     <img src="https://img.shields.io/badge/Swift-5.5-F06C33.svg" />
@@ -43,7 +43,7 @@ let package = Package(
         .package(
             name: "CypherPoetSwiftUIReduxUtils",
             url: "https://github.com/CypherPoet/SwiftUIReduxUtils",
-            .upToNextMinor(from: "0.1.0")
+            .upToNextMinor(from: "0.3.0")
         ),
     ],
     //...
@@ -75,7 +75,9 @@ Then simply `import SwiftUIReduxUtils` wherever you’d like to use it.
 
 The goal of these utilities is to serve as _primitives_ for architecting SwiftUI apps in the [Redux](https://redux.js.org/)/[Elm](https://guide.elm-lang.org/architecture/) style of Reducers, Actions, Side Effects and Middlewares.
 
-🔑 Check out the main [Example App](./Examples/ExampleApp) to see how it [composes different types of app `State` into an app `Store`](https://github.com/CypherPoet/CypherPoetSwiftUIReduxUtils/blob/57cbb225c896181083972a298d8952e8feb14826/Examples/ExampleApp/Shared/Data/State/AppState.swift#L16), [initializes a root store as a `@StateObject`](https://github.com/CypherPoet/CypherPoetSwiftUIReduxUtils/blob/cfd2fd05223f558ea9ee9657361e57f71e600372/Examples/ExampleApp/Shared/ExamplesApp.swift#L13) and [injects](https://github.com/CypherPoet/CypherPoetSwiftUIReduxUtils/blob/cfd2fd05223f558ea9ee9657361e57f71e600372/Examples/ExampleApp/Shared/ExamplesApp.swift#L26) it into [into views](https://github.com/CypherPoet/CypherPoetSwiftUIReduxUtils/blob/57cbb225c896181083972a298d8952e8feb14826/Examples/ExampleApp/Shared/Scene%20Views/AsyncSideEffectExample.swift#L13) as an `@EnvironmentObject`, and then [sends actions to the store](https://github.com/CypherPoet/CypherPoetSwiftUIReduxUtils/blob/57cbb225c896181083972a298d8952e8feb14826/Examples/ExampleApp/Shared/Scene%20Views/AsyncSideEffectExample.swift#L85) as a response to events in the UI.
+[Version 0.2.2](https://github.com/CypherPoet/SwiftUIReduxUtils/tree/f9caa47ff8fcd19db61b91737e80183f46050a09/Examples/ExampleApp) had an example application that demonstrated this, but it's no longer functional after `0.3.0`'s concurrency refactor. That said, until I get a new example in place, it could still be useful to look through to some extent.
+
+<!-- 🔑 Check out the main [Example App](./Examples/ExampleApp) to see how it [composes different types of app `State` into an app `Store`](https://github.com/CypherPoet/CypherPoetSwiftUIReduxUtils/blob/57cbb225c896181083972a298d8952e8feb14826/Examples/ExampleApp/Shared/Data/State/AppState.swift#L16), [initializes a root store as a `@StateObject`](https://github.com/CypherPoet/CypherPoetSwiftUIReduxUtils/blob/cfd2fd05223f558ea9ee9657361e57f71e600372/Examples/ExampleApp/Shared/ExamplesApp.swift#L13) and [injects](https://github.com/CypherPoet/CypherPoetSwiftUIReduxUtils/blob/cfd2fd05223f558ea9ee9657361e57f71e600372/Examples/ExampleApp/Shared/ExamplesApp.swift#L26) it into [into views](https://github.com/CypherPoet/CypherPoetSwiftUIReduxUtils/blob/57cbb225c896181083972a298d8952e8feb14826/Examples/ExampleApp/Shared/Scene%20Views/AsyncSideEffectExample.swift#L13) as an `@EnvironmentObject`, and then [sends actions to the store](https://github.com/CypherPoet/CypherPoetSwiftUIReduxUtils/blob/57cbb225c896181083972a298d8952e8feb14826/Examples/ExampleApp/Shared/Scene%20Views/AsyncSideEffectExample.swift#L85) as a response to events in the UI. -->
 
 
 
