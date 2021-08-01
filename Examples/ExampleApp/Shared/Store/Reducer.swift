@@ -7,6 +7,6 @@
 //
 
 import Foundation
-import CypherPoetReduxUtils
+import CypherPoetSwiftUIReduxUtils
 
-typealias Reducer = CypherPoetReduxUtils.Reducer
+typealias Reducer = CypherPoetSwiftUIReduxUtils.Reducer

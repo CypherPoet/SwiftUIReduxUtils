@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CypherPoetReduxUtils
+import CypherPoetSwiftUIReduxUtils
 
 
 typealias AppStore = Store<AppState, AppState.Action>

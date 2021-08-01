@@ -8,7 +8,7 @@
 
 import Foundation
 import Combine
-import CypherPoetReduxUtils
+import CypherPoetSwiftUIReduxUtils
 
 extension AppState {
 
