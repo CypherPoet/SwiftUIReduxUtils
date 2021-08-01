@@ -1,14 +1,14 @@
-# CypherPoetReduxUtils
+# SwiftUI ReduxUtils
 
 <p>
-    <img src="https://img.shields.io/badge/Swift-5.3-F06C33.svg" />
-    <img src="https://img.shields.io/badge/iOS-13.0+-865EFC.svg" />
-    <img src="https://img.shields.io/badge/iPadOS-13.0+-F65EFC.svg" />
-    <img src="https://img.shields.io/badge/macOS-10.15+-179AC8.svg" />
-    <img src="https://img.shields.io/badge/tvOS-13.0+-41465B.svg" />
-    <img src="https://img.shields.io/badge/watchOS-6.0+-1FD67A.svg" />
+    <img src="https://img.shields.io/badge/Swift-5.5-F06C33.svg" />
+    <img src="https://img.shields.io/badge/iOS-15.0+-865EFC.svg" />
+    <img src="https://img.shields.io/badge/iPadOS-15.0+-F65EFC.svg" />
+    <img src="https://img.shields.io/badge/macOS-12.0+-179AC8.svg" />
+    <img src="https://img.shields.io/badge/tvOS-15.0+-41465B.svg" />
+    <img src="https://img.shields.io/badge/watchOS-8.0+-1FD67A.svg" />
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" />
-    <img src="https://github.com/CypherPoet/CypherPoetReduxUtils/workflows/Build%20&%20Test/badge.svg" />
+    <img src="https://github.com/CypherPoet/SwiftUIReduxUtils/workflows/Build%20&%20Test/badge.svg" />
     <a href="https://github.com/apple/swift-package-manager">
       <img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" />
     </a>
@@ -29,39 +29,54 @@ _A collection utilities for architecting SwiftUI apps in the Redux/Elm style of 
 
 ### Xcode Projects
 
-Select `File` -> `Swift Packages` -> `Add Package Dependency` and enter `https://github.com/CypherPoet/CypherPoetReduxUtils`.
+Select `File` -> `Swift Packages` -> `Add Package Dependency` and enter `https://github.com/CypherPoet/SwiftUIReduxUtils`.
 
 
 ### Swift Package Manager Projects
 
-You can add `CypherPoetReduxUtils` as a dependency in your `Package.swift` file:
+You can add `CypherPoetSwiftUIReduxUtils` as a package dependency in your `Package.swift` file:
 
 ```swift
 let package = Package(
     //...
     dependencies: [
         .package(
-            url: "https://github.com/CypherPoet/CypherPoetReduxUtils",
-            .upToNextMinor(from: "0.2.0")
+            name: "CypherPoetSwiftUIReduxUtils",
+            url: "https://github.com/CypherPoet/SwiftUIReduxUtils",
+            .upToNextMinor(from: "0.1.0")
         ),
     ],
     //...
 )
 ```
 
-Then simply `import CypherPoetReduxUtils` wherever you’d like to use it.
+From there, refer to the `SwiftUIReduxUtils` "product" delivered by the `CypherPoetSwiftUIReduxUtils` "package" inside of any of your project's target dependencies:
+
+```swift
+targets: [
+    .target(
+        name: "YourLibrary",
+        dependencies: [
+            .product(
+                name: "SwiftUIReduxUtils",
+                package: "CypherPoetSwiftUIReduxUtils"
+            ),
+        ],
+        ...
+    ),
+    ...
+]
+```
+
+Then simply `import SwiftUIReduxUtils` wherever you’d like to use it.
 
 
 ## Usage
 
 The goal of these utilities is to serve as _primitives_ for architecting SwiftUI apps in the [Redux](https://redux.js.org/)/[Elm](https://guide.elm-lang.org/architecture/) style of Reducers, Actions, Side Effects and Middlewares.
 
-🔑 Check out the main [Example App](./Examples/ExampleApp) to see how it [composes different types of app `State` into an app `Store`](https://github.com/CypherPoet/CypherPoetReduxUtils/blob/57cbb225c896181083972a298d8952e8feb14826/Examples/ExampleApp/Shared/Data/State/AppState.swift#L16), [initializes a root store as a `@StateObject`](https://github.com/CypherPoet/CypherPoetReduxUtils/blob/cfd2fd05223f558ea9ee9657361e57f71e600372/Examples/ExampleApp/Shared/ExamplesApp.swift#L13) and [injects](https://github.com/CypherPoet/CypherPoetReduxUtils/blob/cfd2fd05223f558ea9ee9657361e57f71e600372/Examples/ExampleApp/Shared/ExamplesApp.swift#L26) it into [into views](https://github.com/CypherPoet/CypherPoetReduxUtils/blob/57cbb225c896181083972a298d8952e8feb14826/Examples/ExampleApp/Shared/Scene%20Views/AsyncSideEffectExample.swift#L13) as an `@EnvironmentObject`, and then [sends actions to the store](https://github.com/CypherPoet/CypherPoetReduxUtils/blob/57cbb225c896181083972a298d8952e8feb14826/Examples/ExampleApp/Shared/Scene%20Views/AsyncSideEffectExample.swift#L85) as a response to events in the UI.
+🔑 Check out the main [Example App](./Examples/ExampleApp) to see how it [composes different types of app `State` into an app `Store`](https://github.com/CypherPoet/CypherPoetSwiftUIReduxUtils/blob/57cbb225c896181083972a298d8952e8feb14826/Examples/ExampleApp/Shared/Data/State/AppState.swift#L16), [initializes a root store as a `@StateObject`](https://github.com/CypherPoet/CypherPoetSwiftUIReduxUtils/blob/cfd2fd05223f558ea9ee9657361e57f71e600372/Examples/ExampleApp/Shared/ExamplesApp.swift#L13) and [injects](https://github.com/CypherPoet/CypherPoetSwiftUIReduxUtils/blob/cfd2fd05223f558ea9ee9657361e57f71e600372/Examples/ExampleApp/Shared/ExamplesApp.swift#L26) it into [into views](https://github.com/CypherPoet/CypherPoetSwiftUIReduxUtils/blob/57cbb225c896181083972a298d8952e8feb14826/Examples/ExampleApp/Shared/Scene%20Views/AsyncSideEffectExample.swift#L13) as an `@EnvironmentObject`, and then [sends actions to the store](https://github.com/CypherPoet/CypherPoetSwiftUIReduxUtils/blob/57cbb225c896181083972a298d8952e8feb14826/Examples/ExampleApp/Shared/Scene%20Views/AsyncSideEffectExample.swift#L85) as a response to events in the UI.
 
-
-### Core Concepts
-
-- 🔑 An app `Store` is a composition of `State` slices &mdash; each governed by a `Reducer` that knows how to listen for a set of dispatched `Action`s.
 
 
 ## Contributing
@@ -73,14 +88,14 @@ There aren't many to-dos here at the moment, but feedback and suggestions are ce
 
 ### Requirements
 
-- Xcode 12.0+
+- Xcode 13.0+
 
 
-### Generating Documentation
+### 📜 Creating & Building Documentation
 
-Documentation is generated by [Jazzy](https://github.com/realm/jazzy). Installation instructions can be found [here](https://github.com/realm/jazzy#installation), and as soon as you have it set up, docs can be generated simply by running `jazzy` from the command line.
+Documentation is built with [Xcode's DocC](https://developer.apple.com/documentation/docc). See [Apple's guidance on how to build, run, and create DocC content](https://developer.apple.com/documentation/docc/api-reference-syntax).
 
-📝 Note that this will only generate a `docs` folder for you to view locally. This folder is being ignored by `git`, as an [action](./.github/workflows/PublishDocumentation.yml) exists to automatically generate docs and serve them on the project's `gh-pages` branch.
+For now, the best way to view the docs is to open the project in Xcode and run the `Build Documentation` command. At some point in the future, I'm hoping to leverage the tooling the develops for generating/hosting DocC documentation. (Please feel free to let me know if you have any ideas or tooling recommendations around this 🙂).
 
 
 ## Acknowledgments
@@ -95,4 +110,4 @@ This project wouldn't be possible without several enlightening projects, article
 
 ## License
 
-`CypherPoetReduxUtils` is available under the MIT license. See the [LICENSE file](./LICENSE) for more info.
+`CypherPoetSwiftUIReduxUtils` is available under the MIT license. See the [LICENSE file](./LICENSE) for more info.

@@ -9,7 +9,7 @@
 
 import Foundation
 import Combine
-import CypherPoetReduxUtils
+import CypherPoetSwiftUIReduxUtils
 
 
 struct GalaxiesState {

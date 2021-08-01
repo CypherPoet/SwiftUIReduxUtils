@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CypherPoetReduxUtils
+import CypherPoetSwiftUIReduxUtils
 
 
 struct AppState {
