@@ -43,7 +43,7 @@ extension Store {
     /// action through each and then asynchronously dispatching any `AppAction`
     /// that results from doing so.
     @discardableResult
-    public func send(_ sideEffectAction: AppAction) -> Task<Void, Never> {
+    public func send(_ sideEffectAction: AppAction) async -> Task<Void, Never> {
         Task {
             await dispatch(sideEffectAction)
             
@@ -55,7 +55,7 @@ extension Store {
                 }
                 
                 for await appAction in resultingAppActions where Task.isCancelled == false {
-                    await dispatch(appAction)
+                    await send(appAction)
                 }
             }
         }
