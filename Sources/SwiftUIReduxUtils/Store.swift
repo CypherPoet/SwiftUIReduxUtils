@@ -43,14 +43,14 @@ extension Store {
     /// action through each and then asynchronously dispatching any `AppAction`
     /// that results from doing so.
     @discardableResult
-    public func send(_ sideEffectAction: AppAction) async -> Task<Void, Never> {
+    public func send(_ action: AppAction) async -> Task<Void, Never> {
         Task {
-            await dispatch(sideEffectAction)
+            await dispatch(action)
             
             // Dispatch all middleware functions and dispatch any mapped actions
             // through the app's reducer.
             for runner in middlewareRunners {
-                guard let resultingAppActions = runner(state, sideEffectAction) else {
+                guard let resultingAppActions = runner(state, action) else {
                     continue
                 }
                 
@@ -66,12 +66,31 @@ extension Store {
 // MARK: - Binding
 extension Store {
     
+    /// Generates a binding that sends a side-effecting store
+    /// action when its underlying value is changed.
+    public func makeBinding<Value>(
+        for keyPath: KeyPath<AppState, Value>,
+        sendingSideEffectOnChange action: @escaping (Value) -> AppAction
+    ) -> Binding<Value> {
+        Binding<Value>(
+            get: {
+                self.state[keyPath: keyPath]
+            },
+            set: { newValue in
+                Task {
+                    await self.send(action(newValue))
+                }
+            }
+        )
+    }
+    
+    
     /// Generates a binding that dispatches a store
     /// action when its underlying value is changed.
-    public func binding<Value>(
+    public func makeBinding<Value>(
         for keyPath: KeyPath<AppState, Value>,
-        reactingWith action: @escaping (Value) -> AppAction
-    ) async -> Binding<Value> {
+        dispatchingActionOnChange action: @escaping (Value) -> AppAction
+    ) -> Binding<Value> {
         Binding<Value>(
             get: {
                 self.state[keyPath: keyPath]
