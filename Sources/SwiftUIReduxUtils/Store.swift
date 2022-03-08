@@ -31,7 +31,7 @@ extension Store {
     
     /// Central hub for receiving an action and sending it to the `Store`'s app reducer
     /// for processing.
-    public func dispatch(_ action: AppAction) async {
+    private func dispatch(_ action: AppAction) async {
         state = await appReducer.reduce(state, action)
     }
     
