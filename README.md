@@ -43,7 +43,7 @@ let package = Package(
         .package(
             name: "CypherPoetSwiftUIReduxUtils",
             url: "https://github.com/CypherPoet/SwiftUIReduxUtils",
-            .upToNextMinor(from: "0.4.0")
+            .upToNextMinor(from: "0.5.0")
         ),
     ],
     //...
